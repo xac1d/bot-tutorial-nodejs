@@ -23,10 +23,10 @@ else  if(request.text && botWeather.test(request.text)) {
   }
 }
 
-function postMessage() {
-  var botResponse, options, body, botReq;
+function postMessage(response) {
+  var botResponse,options, body, botReq;
 
-  botResponse = cool();
+  botResponse = response
 
   options = {
     hostname: 'api.groupme.com',
@@ -57,6 +57,5 @@ function postMessage() {
   });
   botReq.end(JSON.stringify(body));
 }
-
 
 exports.respond = respond;
