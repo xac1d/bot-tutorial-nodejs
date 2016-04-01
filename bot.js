@@ -9,12 +9,12 @@ function respond() {
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("weather is");
+    postMessage();
     this.res.end();
   }
 else  if(request.text && botWeather.test(request.text)) {
     this.res.writeHead(200);
-    postMessage();
+    postMessage("test");
     this.res.end();
   } else {
     console.log("don't care");
