@@ -11,7 +11,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("weather is");
     this.res.end();
-  if(request.text && botWeather.test(request.text)) {
+else  if(request.text && botWeather.test(request.text)) {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
